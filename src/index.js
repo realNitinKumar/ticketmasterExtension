@@ -29,7 +29,7 @@ const searchForCountry = async (countryName, num = 0) => {
     for(let i = 0; i < response.data._embedded.attractions.length; i++){
       // let inputLowercase = countryName.toLowerCase();
       // let dataLowercase = response.data._embedded.attractions[i].name.toLowerCase();
-      
+      console.log(response.data._embedded.attractions[i].name);
       if(response.data._embedded.attractions[i].aliases){
         if(response.data._embedded.attractions[i].name.toLowerCase() == countryName.toLowerCase() || response.data._embedded.attractions[i].aliases.includes(countryName.toLowerCase()) || response.data._embedded.attractions[i].aliases.includes(countryName)){
           attractionIndex = i;
@@ -103,3 +103,10 @@ const handleSubmit = async e => {
 };
 
 form.addEventListener("submit", e => handleSubmit(e));
+
+
+// "default_icon": {
+  // "16": "ticketmasterLogo.png",
+  // "32": "ticketmasterLogo.png",
+  // "128": "ticketmasterLogo.png"
+  // },
