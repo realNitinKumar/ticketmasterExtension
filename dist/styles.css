@@ -1,6 +1,9 @@
 .container {
+  /* border: 5px black solid; */
+  border-radius: 25px;
   margin: 1.5em;
   text-align: center;
+  background: linear-gradient(white, lightblue, blue);
 }
 
 .result {
@@ -17,8 +20,29 @@ img{
 
 .result-container {
   font-size: 1.25em;
+  font-family: 'Pattaya', sans-serif;
 }
 
 .enter-country {
   font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700
+}
+
+.cases {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 700
+}
+
+.categories {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 700
+}
+
+.deaths {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700
 }

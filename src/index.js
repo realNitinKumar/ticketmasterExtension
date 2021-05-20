@@ -7,6 +7,7 @@ const recovered = document.querySelector(".recovered");
 const deaths = document.querySelector(".deaths");
 const results = document.querySelector(".result-container");
 const body = document.querySelector("body");
+const categories = document.querySelector(".categories");
 results.style.display = "none";
 loading.style.display = "none";
 errors.textContent = "";
@@ -66,6 +67,7 @@ const searchForCountry = async (countryName, num = 0) => {
     loading.style.display = "none";
     // cases.textContent = response.data.confirmed.value;
     cases.textContent = response.data._embedded.attractions[attractionIndex].name;
+    categories.textContent = response.data._embedded.attractions[attractionIndex].classifications[0].segment.name;
     // recovered.textContent = response.data._embedded.attractions[attractionIndex].images[0].url;
     // deaths.textContent = response.data._embedded.attractions[attractionIndex].url;
     deaths.innerHTML = `<a href = "${response.data._embedded.attractions[attractionIndex].url}">Get tickets</a>`
