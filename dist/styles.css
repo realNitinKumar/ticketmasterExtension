@@ -6,3 +6,19 @@
 .result {
   margin-top: 1em;
 }
+
+img{
+  width: 400px;
+}
+
+.country-name {
+  margin: 10px;
+}
+
+.result-container {
+  font-size: 1.25em;
+}
+
+.enter-country {
+  font-size: 1.25em;
+}
